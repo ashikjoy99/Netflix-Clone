@@ -1,20 +1,16 @@
-import React from 'react';
 import './Banner.css';
+import {Image_Url} from '../Constants';
 
-function Banner() {
+function Banner({movie}) {
     return (
-        <div className='banner'>
+        <div className='banner' style={{backgroundImage:`url(${ Image_Url+movie.backdrop_path })`}}>
             <div className='content'>
-                <h1 className='title'> Movie Name</h1>
-                <div className='banner-btns'>
-                    <button className='btn'>Play</button>
-                    <button className='btn'>My List</button>
+                <h1 className='title'>{movie.title}</h1>
+                <div className='banner-buttons'>
+                    <button className='buttons'>Play</button>
+                    <button className='buttons'>My List</button>
                 </div>
-                <h1 className='description'>
-                    In publishing and graphic design, 
-                    Lorem ipsum is a placeholder text commonly used to demonstrate the visual
-                     form of a document or a typeface without
-                </h1>
+                <h1 className='description'>{movie.overview}</h1>
             </div>
         <div className="fade_bottom"></div>
         </div>
