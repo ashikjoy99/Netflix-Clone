@@ -25,9 +25,9 @@
 }
 
 .poster:hover{
-	transform: scale(0.5);
+	transform: scale(1.3);
 }
 
 .small-poster:hover{
-	transform: scale(0.5);
+	transform: scale(1.3);
 }
