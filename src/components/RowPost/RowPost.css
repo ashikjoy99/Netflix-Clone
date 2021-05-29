@@ -23,3 +23,11 @@
     max-height: 150px;
     margin-right: 10px;
 }
+
+.poster:hover{
+	transform: scale(0.5);
+}
+
+.small-poster:hover{
+	transform: scale(0.5);
+}
